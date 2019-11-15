@@ -1,5 +1,5 @@
 # Classification-cifar10-pytorch  
-I am testing several classical classification networks performance on cifar10 dataset by PyTorch!  
+I am testing several classical classification networks performance on cifar10 dataset by PyTorch! [Chinese blog](https://blog.csdn.net/laizi_laizi/article/details/103006497)
 # Requirements  
 - pytorch  
 - torchsummary  
