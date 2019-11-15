@@ -142,7 +142,7 @@ def test(epoch):
         best_acc = acc
 
 
-for epoch in range(start_epoch, 300):
+for epoch in range(start_epoch, start_epoch+300):
     # In PyTorch 1.1.0 and later,
     # you should call them in the opposite order:
     # `optimizer.step()` before `lr_scheduler.step()`
