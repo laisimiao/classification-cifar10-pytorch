@@ -16,11 +16,12 @@ I am testing several classical classification networks performance on cifar10 da
 | [ResNeXt29(32x4d)](https://arxiv.org/abs/1611.05431)  | 95.49%      | 4,774,218 | 83.22 | 4,774,218 | 18.21 | 19.2  |  5817 |
 | [DenseNet121](https://arxiv.org/abs/1608.06993)       | 95.55%      | 6,956,298 | 105.05 | 6,956,298 | 26.54  |  28.3 |  8203 |
 | [ResNet18](https://arxiv.org/abs/1512.03385)          | 95.59%      | 11,173,962 | 53.89 | 11,173,962  | 42.63 | 44.8 | 1615 |
-| [ResNet101](https://arxiv.org/abs/1512.03385)         | 95.62%      | 42,512,970 | 262.31  | 42,512,970  | 162.17 | 170.6  |  8857 |  
+| [ResNet101](https://arxiv.org/abs/1512.03385)         | 95.62%      | 42,512,970 | 262.31  | 42,512,970  | 162.17 | 170.6  |  8857 |   
+  
 **Note**:   
 1. Above GPU memory usage(MB) was observed with batch size=128.     
 2. For PreActResNet18, I set initial learning rate=0.1, but it can't converge, so I set it's initial lr=0.01.    
-3. When I firstly train **VGG16**, **ResNet18** and **ResNet50** with total epochs=400. But I want to get results earlier, so for remaining networks, I set total epochs=300 (besides, afterwards it just improve a little).
+3. I firstly train **VGG16**, **ResNet18** and **ResNet50** with total epochs=400. But I want to get results earlier, so for remaining networks, I set total epochs=300 (besides, afterwards it just improve a little).
 # Pre-trained models  
 You can obtain pre-traind models(as above list) from here:
 [[Baidu Drive](https://pan.baidu.com/s/1oUfaxFnghIdClCFMf3A11Q)] [[Google Drive](https://drive.google.com/open?id=1PLwxkczvKq86ATRD7SB-5w31omuORUNV)]
