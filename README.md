@@ -21,7 +21,8 @@ I am testing several classical classification networks performance on cifar10 da
 **Note**:   
 1. Above GPU memory usage(MB) was observed with batch size=128.     
 2. For PreActResNet18, I set initial learning rate=0.1, but it can't converge, so I set it's initial lr=0.01.    
-3. I firstly train **VGG16**, **ResNet18** and **ResNet50** with total epochs=400. But I want to get results earlier, so for remaining networks, I set total epochs=300 (besides, afterwards it just improve a little).
+3. I firstly train **VGG16**, **ResNet18** and **ResNet50** with total epochs=400. But I want to get results earlier, so for remaining networks, I set total epochs=300 (besides, afterwards it just improve a little).  
+4. Run the scripts: `python main.py --resume --lr 0.1 --trainbs 128 --testbs 100`  
 # Pre-trained models  
 You can obtain pre-traind models(as above list) from here:
 [[Baidu Drive](https://pan.baidu.com/s/1oUfaxFnghIdClCFMf3A11Q)] [[Google Drive](https://drive.google.com/open?id=1PLwxkczvKq86ATRD7SB-5w31omuORUNV)]
