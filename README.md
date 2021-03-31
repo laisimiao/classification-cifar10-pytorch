@@ -4,6 +4,22 @@ I am testing several classical classification networks performance on cifar10 da
 - pytorch  
 - torchsummary  
 - python3.x  
+# Training
+- Single-GPU
+    ```python
+    # Start training with: 
+    python main.py
+
+    # You can manually resume the training with: 
+    python main.py --resume --lr=0.01
+    ```  
+- Muiti-GPU
+    ```python
+    # Start training with(assume you have 2 GPUs): 
+    python -m torch.distributed.launch --nproc_per_node=2 main.py
+    # You can manually resume the training with:
+    python -m torch.distributed.launch --nproc_per_node=2 main.py --resume
+    ```
 # Results  
 | Model             | My Acc.        | Total params  |  Estimated Total Size (MB) |  Trainable params | Params size (MB) |Saved model size (MB)|GPU memory usage(MB)
 | ----------------- | ----------- | ------  | ---|--- | --- |  --- |--- |
